@@ -1,0 +1,19 @@
+version: "2"
+services:
+
+  front:
+    image: mhart/alpine-node:6
+    command: sh -c 'cd /app && npm install && npm run build'
+    volumes:
+      - ./frontend:/app
+
+  app:
+    build: ./app
+    ports:
+      - "80:80"
+    depends_on:
+      - front
+    volumes:
+      - ./frontend/index.html:/app/front/index.html
+      - ./frontend/dist:/app/front/dist
+      - ./app/config:/app/config
