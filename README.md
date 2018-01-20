@@ -1,6 +1,3 @@
-## What is it
-*todo*
-
 ## Requirements
 - Google chromecast
 - Docker
