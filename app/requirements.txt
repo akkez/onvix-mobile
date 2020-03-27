@@ -1,5 +1,5 @@
 Flask-Cors==3.0.3
-requests==2.18.4
+requests==2.20.0
 
 # uwsgi
 # Flask==0.12.2
