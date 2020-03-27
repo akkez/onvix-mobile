@@ -10,7 +10,7 @@
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js src/googlecast.js | uglifyjs -c warnings=false -m > dist/build.js"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.19.2",
     "uiv": "^0.16.0",
     "vue": "^2.0.1",
     "vue-router": "^3.0.1"
